@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 1px 4px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.darkMode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.darkMode_icon {
+  height: 20px;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .darkMode span {
+    font-size: 15px;
+  }
+
+  .darkMode_icon {
+    height: 18px;
+  }
+}
+
+@media (max-width: 370px) {
+  .header {
+    padding: 0 10px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+}
