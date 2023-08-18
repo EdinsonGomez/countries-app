@@ -5,6 +5,7 @@ import '../styles/global.css';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
 import Header from "../components/header/Header";
+import Filters from 'src/components/filters/Filters';
 
 config.autoAddCss = false;
 
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
       <body className={font.className}>
         <Header />
         <main>
+          <Filters />
           {children}
         </main>
       </body>
