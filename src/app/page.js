@@ -1,5 +1,12 @@
-import Image from 'next/image'
+import List from "src/components/list/List";
+import { getAllCountries } from "src/services/countries";
 
-export default function Home() {
-  return null
+const Home = async () => {
+  const countries = await getAllCountries();
+
+  return (
+    <List countriesList={countries} />
+  )
 }
+
+export default Home;
