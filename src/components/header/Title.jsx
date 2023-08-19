@@ -7,12 +7,12 @@ const Title = ({ children }) => {
   const router = useRouter();
 
   return (
-    <p
+    <h1
       className={styles.title}
       onClick={() => router.push('/')}
     >
       {children}
-    </p>
+    </h1>
   )
 }
 
