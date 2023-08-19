@@ -1,0 +1,46 @@
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-gray: hsl(0, 0%, 98%);
+  --color-dark-gray: hsl(0, 0%, 52%);
+  --color-dark-blue: hsl(209, 23%, 22%);
+  --color-very-dark-blue: hsl(207, 26%, 17%);
+  --color-high-dark-blue: hsl(200, 15%, 8%);
+}
+
+body[data-theme="light"] {
+  --text-color: var(--color-high-dark-blue);
+  --background-elements: var(--color-white);
+  --text-color-input: var(--color-dark-gray);
+  --background-body: var(--color-light-gray);
+  --option-hover-color: var(--color-light-gray);
+}
+
+body[data-theme="dark"] {
+  --text-color: var(--color-white);
+  --background-elements: var(--color-dark-blue);
+  --text-color-input: var(--color-dark-gray);
+  --background-body: var(--color-very-dark-blue);
+  --option-hover-color: var(--color-very-dark-blue);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--background-body);
+}
+
+h1, h2, h3, h4, h5, p, span, li {
+  color: var(--text-color);
+}
+
+input {
+  color: var(--text-color);
+}
+
+input::placeholder {
+  color: var(--text-color-input);
+}
+
+main {
+  padding: 0 50px;
+}
