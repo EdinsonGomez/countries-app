@@ -1,0 +1,22 @@
+.darkMode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.darkMode_icon {
+  height: 20px;
+  color: var(--text-color);
+}
+
+@media (max-width: 600px) {
+  .darkMode span {
+    font-size: 15px;
+  }
+
+  .darkMode_icon {
+    height: 18px;
+  }
+}

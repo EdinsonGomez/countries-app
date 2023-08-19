@@ -106,7 +106,7 @@ const Filters = () => {
     <div className={styles.filters_container}>
       <div className={styles.search_input}>
         <span onClick={onClickSearch}>
-          <FontAwesomeIcon icon={faMagnifyingGlass} />
+          <FontAwesomeIcon icon={faMagnifyingGlass} className={styles.search_icon} />
         </span>
         <input
           id="search_input"
