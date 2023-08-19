@@ -17,7 +17,7 @@ const BackBtn = () => {
   return (
     <div className={styles.backBtn_container} onClick={onClick}>
       <div className={styles.backBtn}>
-        <FontAwesomeIcon icon={faArrowLeftLong} />
+        <FontAwesomeIcon icon={faArrowLeftLong} className={styles.backBtn_icon} />
         <span>
           Back
         </span>

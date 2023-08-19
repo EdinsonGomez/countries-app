@@ -10,7 +10,8 @@ import Filters from 'src/components/filters/Filters';
 config.autoAddCss = false;
 
 const font = Nunito_Sans({
-  subsets: ['latin']
+  subsets: ['latin'],
+  weight: ['300', '600', '800']
 })
 
 export const metadata = {
@@ -21,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={font.className}>
+      <body className={font.className} data-theme="light">
         <Header />
         <main>
           {children}

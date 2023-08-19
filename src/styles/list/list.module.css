@@ -13,6 +13,7 @@
   height: 350px;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
   border-radius: var(--item-radious);
+  background: var(--background-elements);
 }
 
 .list_item img {

@@ -84,6 +84,14 @@ const Filters = () => {
     if (search) {
       router.push(`/search/${search}`);
       setRegion('');
+    } else {
+      router.push('/');
+    }
+  }
+
+  const onKeyUp = (event) => {
+    if (event.key === "Enter") {
+      onClickSearch();
     }
   }
 
@@ -98,7 +106,7 @@ const Filters = () => {
     <div className={styles.filters_container}>
       <div className={styles.search_input}>
         <span onClick={onClickSearch}>
-          <FontAwesomeIcon icon={faMagnifyingGlass} />
+          <FontAwesomeIcon icon={faMagnifyingGlass} className={styles.search_icon} />
         </span>
         <input
           id="search_input"
@@ -107,6 +115,7 @@ const Filters = () => {
           placeholder="Search for a country..."
           onChange={handleChange}
           value={search}
+          onKeyUp={onKeyUp}
         />
       </div>
 

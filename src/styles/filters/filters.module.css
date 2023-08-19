@@ -3,6 +3,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 50px 0;
+  row-gap: 20px;
 }
 
 .search_input, .regions, .select input, .select_options {
@@ -12,18 +13,25 @@
 .search_input {
   padding: 10px 30px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   column-gap: 15px;
   border-radius: 5px;
   min-width: 35%;
   height: 45px;
   box-sizing: border-box;
+  background: var(--background-elements);
+  overflow: hidden;
+}
+
+.search_icon {
+  color: var(--text-color-input);
 }
 
 .search_input input[type=text] {
   border: none;
   height: 100%;
+  background: inherit;
 }
 
 .search_input input[type=text]:focus {
@@ -49,7 +57,7 @@
   z-index: 2;
   width: var(--size);
   height: var(--size); 
-  border: 2px solid var(--color-dark-blue);
+  border: 2px solid var(--text-color);
   border-top: none;
   border-right: none;
   transition: 0.5s;
@@ -71,7 +79,7 @@
   border: none;
   outline: none;
   border-radius: 5px;
-  background-color: var(--color-white);
+  background: var(--background-elements);
   padding: 8px 15px;
   box-sizing: border-box;
 }
@@ -81,7 +89,7 @@
   top: 35px;
   width: 100%;
   border-radius: 5px;
-  background-color: var(--color-white);
+  background: var(--background-elements);
   padding: 5px 0;
   list-style: none;
   display: none;
@@ -96,6 +104,6 @@
 }
 
 .select_options li:hover {
-  background-color: var(--color-light-gray);
+  background-color: var(--option-hover-color);
   cursor: pointer;
 }

@@ -4,6 +4,7 @@
   align-items: center;
   padding: 0 30px;
   box-shadow: 1px 4px 15px 5px rgba(0, 0, 0, 0.3);
+  background: var(--background-elements);
 }
 
 .title {
@@ -12,28 +13,9 @@
   cursor: pointer;
 }
 
-.darkMode {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-}
-
-.darkMode_icon {
-  height: 20px;
-}
-
 @media (max-width: 600px) {
   .title {
     font-size: 20px;
-  }
-
-  .darkMode span {
-    font-size: 15px;
-  }
-
-  .darkMode_icon {
-    height: 18px;
   }
 }
 
