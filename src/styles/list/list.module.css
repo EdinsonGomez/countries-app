@@ -20,6 +20,7 @@
   height: 45%;
   border-radius: var(--item-radious) var(--item-radious) 0 0;
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .list_item_description {

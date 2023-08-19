@@ -1,5 +1,5 @@
 import List from 'src/components/list/List';
-import { getCountriesByName } from '../../../services/countries';
+import { getCountriesByName } from 'src/services/countries';
 
 const SearchByNamePage = async ({ params }) => {
   const { name } = params;
