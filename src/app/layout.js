@@ -24,7 +24,6 @@ export default function RootLayout({ children }) {
       <body className={font.className}>
         <Header />
         <main>
-          <Filters />
           {children}
         </main>
       </body>

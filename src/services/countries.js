@@ -12,3 +12,8 @@ export const getCountriesByName = (name) => {
   return fetch(`https://restcountries.com/v3.1/name/${name}`, { cache: "no-store" })
     .then(res => res.json())
 }
+
+export const getCountryByCode = (code) => {
+  return fetch(`https://restcountries.com/v3.1/alpha/${code}`, { cache: "no-store" })
+    .then(res => res.json())
+}

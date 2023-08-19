@@ -1,5 +1,4 @@
-'use-client'
-
+import Flag from './Flag';
 import { convertToDecimal } from "src/helpers/numbers";
 import styles from 'src/styles/list/list.module.css';
 
@@ -9,7 +8,12 @@ const List = ({ countriesList }) => {
       {countriesList?.length
         ? countriesList.map((country, idx) => (
           <div key={country.cioc} className={styles.list_item}>
-            <img alt={`flag-${country.cioc}`} src={`${country?.flags?.png}`} />
+            {/* <img alt={`flag-${country.cioc}`} src={`${country?.flags?.png}`} /> */}
+            <Flag
+              alt={`flag-${country.cioc}`}
+              src={country?.flags?.png}
+              countryCode={country?.cioc}
+            />
             <div className={styles.list_item_description}>
               <p className={styles.list_item_name}>{country?.name?.common}</p>
               <p><strong>Population: </strong>{convertToDecimal(country?.population)}</p>
