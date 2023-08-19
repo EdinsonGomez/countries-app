@@ -84,6 +84,14 @@ const Filters = () => {
     if (search) {
       router.push(`/search/${search}`);
       setRegion('');
+    } else {
+      router.push('/');
+    }
+  }
+
+  const onKeyUp = (event) => {
+    if (event.key === "Enter") {
+      onClickSearch();
     }
   }
 
@@ -107,6 +115,7 @@ const Filters = () => {
           placeholder="Search for a country..."
           onChange={handleChange}
           value={search}
+          onKeyUp={onKeyUp}
         />
       </div>
 
